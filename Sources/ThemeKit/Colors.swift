@@ -25,6 +25,8 @@ extension Color {
     
 //
     public static let themeBlack = Color("Black", bundle: Bundle.module)
+    public static let themeBlack20 = Color.themeBlack.opacity(0.2)
+    public static let themeBlack50 = Color.themeBlack.opacity(0.5)
     
     
 
