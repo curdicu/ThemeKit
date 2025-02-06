@@ -6,6 +6,13 @@ struct ColorsView: View {
     @State private var themeModeIterator = 0
 
     private let customColors: [CustomColor] = [
+        
+        CustomColor(name: "Black", color: .themeBlack),
+        
+        
+        
+         
+        
         CustomColor(name: "Gray", color: .themeGray),
         CustomColor(name: "LightGray", color: .themeLightGray),
         CustomColor(name: "Dark", color: .themeDark),
