@@ -22,7 +22,8 @@ struct MainView: View {
                         Text("Fonts")
                     }
         }
-                .accentColor(.themeJacob)
+                // .accentColor(.themeJacob)
+                .accentColor(.themeBlack)
     }
 
 }

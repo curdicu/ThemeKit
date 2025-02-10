@@ -25,7 +25,8 @@ open class ThemeNavigationController: UINavigationController {
 
     private func commonInit() {
         navigationBar.prefersLargeTitles = true
-        navigationBar.tintColor = .themeJacob
+        // navigationBar.tintColor = .themeJacob
+        navigationBar.tintColor = .themeBlack
     }
 
     deinit {
@@ -84,7 +85,8 @@ open class ThemeTabBarController: UITabBarController {
 
         tabBar.barTintColor = .clear
 
-        tabBar.tintColor = .themeJacob
+        // tabBar.tintColor = .themeJacob
+        tabBar.tintColor = .themeBlack
         tabBar.unselectedItemTintColor = .themeGray
 
         updateUITheme()
