@@ -21,6 +21,8 @@ extension Color {
     public static let themeYellow20 = Color.themeYellow.opacity(0.2)
     public static let themeYellow50 = Color.themeYellow.opacity(0.5)
     public static let themeRed50 = Color.themeRed.opacity(0.5)
+    public static let themeGreen20 = Color.themeGreen.opacity(0.2)
+    public static let themeGreen50 = Color.themeGreen.opacity(0.5)
     
     
 //
