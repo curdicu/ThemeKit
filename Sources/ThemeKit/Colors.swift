@@ -94,7 +94,7 @@ extension UIColor {
     public static let themeSteelLight10 = UIColor(hex: 0xd6d7dd)
     public static let themeLagunaD = UIColor(hex: 0x4a98e9)
     public static let themeLagunaL = UIColor(hex: 0x4692da)
-    public static let themeGroundD = UIColor(hex: 0xf6fcfa)
+    public static let themeCyanD = UIColor(hex: 0xf6fcfa)
     
 }
 
