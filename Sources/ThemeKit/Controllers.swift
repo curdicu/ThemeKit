@@ -25,8 +25,26 @@ open class ThemeNavigationController: UINavigationController {
 
     private func commonInit() {
         navigationBar.prefersLargeTitles = true
-        // navigationBar.tintColor = .themeJacob
-        navigationBar.tintColor = .themeBlack
+        
+        defultNavigationBarTheme()
+    }
+    
+    public func defultNavigationBarTheme() {
+        
+        updateNavigationBarTheme(backgroundColor: .themeNavigationBarBackground, foregroundColor: UIColor.themeLeah, tintColor: .themeLeah)
+    }
+    
+    public func updateNavigationBarTheme(backgroundColor: UIColor, foregroundColor: UIColor, tintColor: UIColor) {
+        
+        let standardAppearance = UINavigationBarAppearance()
+        standardAppearance.configureWithTransparentBackground()
+        standardAppearance.backgroundColor = backgroundColor
+        standardAppearance.titleTextAttributes = [.foregroundColor: foregroundColor]
+        standardAppearance.largeTitleTextAttributes = [.foregroundColor: foregroundColor, .font: UIFont.headline2]
+
+        navigationBar.standardAppearance = standardAppearance
+        navigationBar.scrollEdgeAppearance = standardAppearance
+        navigationBar.tintColor = tintColor
     }
 
     deinit {
