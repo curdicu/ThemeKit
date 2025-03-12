@@ -31,7 +31,7 @@ extension Color {
     public static let themeBlack50 = Color.themeBlack.opacity(0.5)
     
     
-
+    public static let themeYellowDark = Color("YellowDark", bundle: Bundle.module)
     public static let themeJacob = Color("Jacob", bundle: Bundle.module)
     public static let themeRemus = Color("Remus", bundle: Bundle.module)
     public static let themeLucian = Color("Lucian", bundle: Bundle.module)
@@ -75,6 +75,7 @@ extension UIColor {
     public static let themeDark = UIColor(hex: 0x13151a)
     public static let themeDark96 = UIColor(hex: 0x13151a, alpha: 0.96)
     public static let themeDarker = UIColor(hex: 0x0f1014)
+    public static let themeDarkD = UIColor(hex: 0xD3039)
     public static let themeLight = UIColor(hex: 0xf0f0f0)
     public static let themeLight96 = UIColor(hex: 0xf0f0f0, alpha: 0.96)
     public static let themeBlack10 = UIColor(hex: 0x000000, alpha: 0.1)
@@ -122,6 +123,8 @@ extension UIColor {
     public static var themeBlake: UIColor { color(dark: .themeSteelDark10, light: .themeSteelLight10) }
     public static var themeLaguna: UIColor { color(dark: .themeLagunaD, light: .themeLagunaL) }
     public static var themeBlackTenTwenty: UIColor { color(dark: .themeBlack10, light: .themeBlack20) }
+    public static var themeYellowDark: UIColor { color(dark: .themeDarkD, light: .themeYellowY) }
+    public static var themeDarkYellow: UIColor { color(dark: .themeYellowY, light: .themeDarkD) }
 
     private static func color(dark: UIColor, light: UIColor) -> UIColor {
         UIColor { traits in
