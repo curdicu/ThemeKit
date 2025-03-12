@@ -123,7 +123,6 @@ extension UIColor {
     public static var themeBlake: UIColor { color(dark: .themeSteelDark10, light: .themeSteelLight10) }
     public static var themeLaguna: UIColor { color(dark: .themeLagunaD, light: .themeLagunaL) }
     public static var themeBlackTenTwenty: UIColor { color(dark: .themeBlack10, light: .themeBlack20) }
-    public static var themeYellowDark: UIColor { color(dark: .themeDarkD, light: .themeYellowY) }
     public static var themeDarkYellow: UIColor { color(dark: .themeYellowY, light: .themeDarkD) }
 
     private static func color(dark: UIColor, light: UIColor) -> UIColor {
