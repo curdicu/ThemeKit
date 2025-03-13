@@ -126,7 +126,8 @@ extension UIColor {
     public static var themeBlake: UIColor { color(dark: .themeSteelDark10, light: .themeSteelLight10) }
     public static var themeLaguna: UIColor { color(dark: .themeLagunaD, light: .themeLagunaL) }
     public static var themeBlackTenTwenty: UIColor { color(dark: .themeBlack10, light: .themeBlack20) }
-    public static var themeDarkYellow: UIColor { color(dark: .themeYellowY, light: .themeDarkD) }
+    public static var themeYellowDark: UIColor { color(dark: .themeBlack, light: .themeYellowY) }
+    public static var themeDarkYellow: UIColor { color(dark: .themeYellowY, light: .themeBlack) }
 
     private static func color(dark: UIColor, light: UIColor) -> UIColor {
         UIColor { traits in
