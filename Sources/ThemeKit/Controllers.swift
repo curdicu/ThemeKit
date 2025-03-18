@@ -31,20 +31,25 @@ open class ThemeNavigationController: UINavigationController {
     
     public func defultNavigationBarTheme() {
         
-        updateNavigationBarTheme(backgroundColor: .themeNavigationBarBackground, foregroundColor: UIColor.themeLeah, tintColor: .themeLeah)
+        updateNavigationBarTheme()
     }
     
-    public func updateNavigationBarTheme(backgroundColor: UIColor, foregroundColor: UIColor, tintColor: UIColor) {
+    public func updateNavigationBarTheme(backgroundColor: UIColor? = nil, foregroundColor: UIColor? = nil, tintColor: UIColor? = nil, largeFont: UIFont? = nil) {
         
         let standardAppearance = UINavigationBarAppearance()
         standardAppearance.configureWithTransparentBackground()
-        standardAppearance.backgroundColor = backgroundColor
-        standardAppearance.titleTextAttributes = [.foregroundColor: foregroundColor]
-        standardAppearance.largeTitleTextAttributes = [.foregroundColor: foregroundColor, .font: UIFont.headline2]
+        standardAppearance.backgroundColor = backgroundColor ?? .themeNavigationBarBackground
+        standardAppearance.titleTextAttributes = [.foregroundColor: foregroundColor ?? .themeLeah]
+        standardAppearance.largeTitleTextAttributes = [.foregroundColor: foregroundColor ?? .themeLeah, .font: largeFont ?? UIFont.title2]
 
         navigationBar.standardAppearance = standardAppearance
         navigationBar.scrollEdgeAppearance = standardAppearance
         navigationBar.tintColor = tintColor
+    }
+    
+    public func largeTitleTextFont(font: UIFont) {
+        
+        updateNavigationBarTheme(backgroundColor: navigationBar.standardAppearance.backgroundColor, foregroundColor: (navigationBar.standardAppearance.titleTextAttributes[.foregroundColor] as? UIColor), tintColor: (navigationBar.standardAppearance.largeTitleTextAttributes[.foregroundColor] as? UIColor), largeFont: font)
     }
 
     deinit {
