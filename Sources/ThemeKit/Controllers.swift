@@ -30,8 +30,8 @@ open class ThemeNavigationController: UINavigationController {
     }
     
     public func defultNavigationBarTheme() {
-        
-        updateNavigationBarTheme()
+     
+        updateNavigationBarTheme(backgroundColor: .themeNavigationBarBackground, foregroundColor: UIColor.themeLeah, tintColor: .themeLeah)
     }
     
     public func updateNavigationBarTheme(backgroundColor: UIColor? = nil, foregroundColor: UIColor? = nil, tintColor: UIColor? = nil, largeFont: UIFont? = nil) {
@@ -39,8 +39,8 @@ open class ThemeNavigationController: UINavigationController {
         let standardAppearance = UINavigationBarAppearance()
         standardAppearance.configureWithTransparentBackground()
         standardAppearance.backgroundColor = backgroundColor ?? .themeNavigationBarBackground
-        standardAppearance.titleTextAttributes = [.foregroundColor: foregroundColor ?? .themeLeah]
-        standardAppearance.largeTitleTextAttributes = [.foregroundColor: foregroundColor ?? .themeLeah, .font: largeFont ?? UIFont.title2]
+        standardAppearance.titleTextAttributes = [.foregroundColor: foregroundColor ?? UIColor.themeLeah]
+        standardAppearance.largeTitleTextAttributes = [.foregroundColor: foregroundColor ?? UIColor.themeLeah, .font: largeFont ?? UIFont.title2]
 
         navigationBar.standardAppearance = standardAppearance
         navigationBar.scrollEdgeAppearance = standardAppearance
