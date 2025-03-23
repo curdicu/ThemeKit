@@ -27,6 +27,8 @@ extension UIFont {
     public static let title3: UIFont = .systemFont(ofSize: 22, weight: .bold)
     public static let headline1: UIFont = .systemFont(ofSize: 22, weight: .semibold)
     public static let headline2: UIFont = .systemFont(ofSize: 17, weight: .semibold)
+    public static let headline3: UIFont = .systemFont(ofSize: 16, weight: .semibold)
+    public static let headline4: UIFont = .systemFont(ofSize: 15, weight: .semibold)
     public static let body: UIFont = .systemFont(ofSize: 17, weight: .regular)
     public static let body1: UIFont = .systemFont(ofSize: 16, weight: .regular)
     public static let body2: UIFont = .systemFont(ofSize: 15, weight: .regular)
