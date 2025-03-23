@@ -7,6 +7,7 @@ extension Color {
     public static let themeLightGray = Color("LightGray", bundle: Bundle.module)
     public static let themeDark = Color("Dark", bundle: Bundle.module)
     public static let themeDarker = Color("Darker", bundle: Bundle.module)
+    public static let themeDarkGray1 = Color("DarkGray1", bundle: Bundle.module)
     public static let themeSteel = Color("Steel", bundle: Bundle.module)
     public static let themeSteelLight = Color("SteelLight", bundle: Bundle.module)
     public static let themeYellow = Color("Yellow", bundle: Bundle.module)
