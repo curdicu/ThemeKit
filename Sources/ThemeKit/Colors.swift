@@ -54,6 +54,7 @@ extension Color {
     public static let themeRaina = Color("Raina", bundle: Bundle.module)
     public static let themeTyler = Color("Tyler", bundle: Bundle.module)
     public static let themeTyler96 = Color("Tyler96", bundle: Bundle.module)
+    public static let themeShadowD = Color("ShadowD", bundle: Bundle.module)
 
     public static var themeBackgroundFromGradient: Color { .themeTyler }
     public static var themeBackgroundToGradient: Color { .themeHelsing }
@@ -106,6 +107,7 @@ extension UIColor {
     public static let themeCyanD = UIColor(hex: 0xd7e4e3)
     public static let themeCyanL = UIColor(hex: 0xf6fcfa)
     public static let themeShadowGray = UIColor(hex: 0x454f59, alpha: 0.1)
+    public static let themeShadowDarkGray = UIColor(hex: 0x121c27, alpha: 0.6)
     
 }
 
@@ -133,6 +135,7 @@ extension UIColor {
     public static var themeBlackTenTwenty: UIColor { color(dark: .themeBlack10, light: .themeBlack20) }
     public static var themeYellowDark: UIColor { color(dark: .themeBlack, light: .themeYellowY) }
     public static var themeDarkYellow: UIColor { color(dark: .themeYellowY, light: .themeBlack) }
+    public static var themeShadowD: UIColor { color(dark: .themeShadowDarkGray, light: .themeShadowGray) }
 
     private static func color(dark: UIColor, light: UIColor) -> UIColor {
         UIColor { traits in
