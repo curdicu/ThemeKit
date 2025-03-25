@@ -48,6 +48,7 @@ extension Color {
     public static let themeJeremy = Color("Jeremy", bundle: Bundle.module)
     public static let themeLaguna = Color("Laguna", bundle: Bundle.module)
     public static let themeLawrence = Color("Lawrence", bundle: Bundle.module)
+    public static let themeLawrenceBg = Color("LawrenceBg", bundle: Bundle.module)
     public static let themeLawrencePressed = Color("LawrencePressed", bundle: Bundle.module)
     public static let themeNina = Color("Nina", bundle: Bundle.module)
     public static let themeRaina = Color("Raina", bundle: Bundle.module)
@@ -76,6 +77,7 @@ extension UIColor {
     public static let themeWhite = UIColor(hex: 0xffffff)
     public static let themeSteelDark = UIColor(hex: 0x252933)
     public static let themeSteelLight = UIColor(hex: 0xe1e1e5)
+    public static let themeSteelDarkBg = UIColor(hex: 0x202f40)
     public static let themeDark = UIColor(hex: 0x13151a)
     public static let themeDark96 = UIColor(hex: 0x13151a, alpha: 0.96)
     public static let themeDarker = UIColor(hex: 0x0f1014)
@@ -115,6 +117,7 @@ extension UIColor {
     public static var themeJeremy: UIColor { color(dark: .themeSteel20, light: .themeSteelLight) }
     public static var themeElena: UIColor { color(dark: .themeSteel20, light: .themeLightGray) }
     public static var themeLawrence: UIColor { color(dark: .themeSteelDark, light: .themeWhite) }
+    public static var themeLawrenceBg: UIColor { color(dark: .themeSteelDarkBg, light: .themeWhite) }
     public static var themeLawrencePressed: UIColor { color(dark: .themeLawrencePressedD, light: .themeLawrencePressedL) }
     public static var themeClaude: UIColor { color(dark: .themeDark, light: .themeWhite) }
     public static var themeAndy: UIColor { color(dark: .themeBlack50, light: .themeSteel20) }
