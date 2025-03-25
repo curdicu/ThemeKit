@@ -106,8 +106,10 @@ extension UIColor {
     public static let themeLagunaL = UIColor(hex: 0x4692da)
     public static let themeCyanD = UIColor(hex: 0xd7e4e3)
     public static let themeCyanL = UIColor(hex: 0xf6fcfa)
-    public static let themeShadowGray = UIColor(hex: 0x454f59, alpha: 0.1)
-    public static let themeShadowDarkGray = UIColor(hex: 0x121c27, alpha: 0.6)
+    public static let themeShadowGray = UIColor(hex: 0x454f59)
+    public static let themeShadowGray10 = UIColor(hex: 0x454f59, alpha: 0.1)
+    public static let themeShadowDarkGray = UIColor(hex: 0x121c27)
+    public static let themeShadowDarkGray60 = UIColor(hex: 0x121c27, alpha: 0.6)
     
 }
 
@@ -135,7 +137,7 @@ extension UIColor {
     public static var themeBlackTenTwenty: UIColor { color(dark: .themeBlack10, light: .themeBlack20) }
     public static var themeYellowDark: UIColor { color(dark: .themeBlack, light: .themeYellowY) }
     public static var themeDarkYellow: UIColor { color(dark: .themeYellowY, light: .themeBlack) }
-    public static var themeShadowD: UIColor { color(dark: .themeShadowDarkGray, light: .themeShadowGray) }
+    public static var themeShadowD: UIColor { color(dark: .themeShadowDarkGray60, light: .themeShadowGray10) }
 
     private static func color(dark: UIColor, light: UIColor) -> UIColor {
         UIColor { traits in
