@@ -120,6 +120,7 @@ extension UIColor {
     public static var themeRemus: UIColor { color(dark: .themeGreenD, light: .themeGreenL) }
     public static var themeLucian: UIColor { color(dark: .themeRedD, light: .themeRedL) }
     public static var themeLeah: UIColor { color(dark: .themeSteelLight, light: .themeSteelDark) }
+    public static var themeDarkLeah: UIColor { color(dark: .themeWhite, light: .themeSteelDark) }
     public static var themeJeremy: UIColor { color(dark: .themeSteel20, light: .themeSteelLight) }
     public static var themeElena: UIColor { color(dark: .themeSteel20, light: .themeLightGray) }
     public static var themeLawrence: UIColor { color(dark: .themeSteelDark, light: .themeWhite) }
